@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "group-pd-20260630-pro001",
+      "type": "group",
+      "data": { "label": "PD — Problem Discovery" },
+      "position": { "x": 120, "y": -600 },
+      "width": 1600,
+      "height": 1200,
+      "style": { "width": 1600, "height": 1200, "zIndex": -1 }
+    },
+    {
+      "id": "pd-summary-1",
+      "type": "pd-summary-node",
+      "data": {
+        "label": "Problem Summary",
+        "description": "مصنع صابون متوسط الحجم يسجل جميع العمليات المالية يدوياً على دفاتر ورقية.
+كل يوم يحدث خلط كبير في الحسابات.
+",
+        "points": [
+          "فواتير تختفي",
+          "أرقام مبيعات تُكتب غلط",
+          "المخزون لا يتطابق مع الواقع",
+          "المدير لا يعرف الوضع المالي الحقيقي للمصنع"
+        ]
+      },
+      "position": { "x": 40, "y": 80 },
+      "width": 320,
+      "height": 280,
+      "parentId": "group-pd-20260630-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-problem-1",
+      "type": "pd-problem-node",
+      "data": {
+        "label": "مشاكل مالية وإدارية",
+        "description": "تؤدي هذه الأخطاء إلى خسائر مالية مستمرة، مشاكل مع الموردين، تأخير في الرواتب، وصعوبة في اتخاذ قرارات صحيحة."
+      },
+      "position": { "x": 40, "y": 380 },
+      "width": 320,
+      "height": 200,
+      "parentId": "group-pd-20260630-pro001",
+      "extent": "parent"
+    }
+  ]
+}
