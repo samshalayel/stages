@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "group-s1-20260701-pro001",
+      "type": "group",
+      "data": { "label": "S1 — Product Shape" },
+      "position": { "x": 120, "y": 700 },
+      "width": 1600,
+      "height": 1000,
+      "style": { "width": 1600, "height": 1000, "zIndex": -1 }
+    },
+    {
+      "id": "s1-stage-1",
+      "type": "s1-stage",
+      "data": { "label": "Product Shape", "description": "تسجيل العمليات المالية يدوياً يؤدي إلى خلط كبير في الحسابات مما يتسبب في خسائر مالية مستمرة. يحتاج المصنع إلى نظام محوسب لحل هذه المشكلة.", "points": ["الفواتير تختفي","أرقام المبيعات تُكتب بشكل خاطئ","المخزون لا يتطابق مع الواقع","مدير المصنع لا يعرف الوضع المالي الحقيقي"] },
+      "position": { "x": 40, "y": 80 },
+      "width": 360,
+      "height": 260,
+      "parentId": "group-s1-20260701-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "s1-insight-2",
+      "type": "s1-product-insight-node",
+      "data": { "label": "Product Insight", "description": "الأشخاص المعنيين في المشكلة هم موظفو المصنع والمدير والموردون. كل من يؤثر عليه النظام المالي سواء بشكل إيجابي أو سلبي.", "points": ["موظفو المصنع","المدير","الموردون","المحاسبون"] },
+      "position": { "x": 460, "y": 80 },
+      "width": 360,
+      "height": 260,
+      "parentId": "group-s1-20260701-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "s1-personas-3",
+      "type": "s1-actors-node",
+      "data": { "label": "User Personas", "description": "الأهداف هي تحسين دقة العمليات المالية وتقليل الأخطاء وضمان اتخاذ قرارات مالية سليمة.", "points": ["تحسين دقة السجلات المالية","تقليل الأخطاء في الحسابات","ضمان اتخاذ قرارات مالية صحيحة"] },
+      "position": { "x": 880, "y": 80 },
+      "width": 360,
+      "height": 260,
+      "parentId": "group-s1-20260701-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "s1-modules-4",
+      "type": "s1-modules-node",
+      "data": { "label": "Feature Modules", "description": "النقاط المؤلمة تشمل الفوضى في السجلات المالية وتأثيرها السلبي على العمليات التشغيلية.", "points": ["خسائر مالية مستمرة","مشاكل مع الموردين","تأخير في دفع الرواتب","سوء اتخاذ القرارات"] },
+      "position": { "x": 40, "y": 420 },
+      "width": 360,
+      "height": 260,
+      "parentId": "group-s1-20260701-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "s1-procedures-5",
+      "type": "s1-procedures-node",
+      "data": { "label": "User Procedures", "description": "القيود تشمل الاعتماد على النظام اليدوي والموارد المحدودة لشراء نظام محوسب جديد.", "points": ["البنية التحتية التكنولوجية الضعيفة","التكاليف المالية المرتفعة لنظام جديد","مقاومة الموظفين للتغيير"] },
+      "position": { "x": 460, "y": 420 },
+      "width": 360,
+      "height": 300,
+      "parentId": "group-s1-20260701-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "s1-boundary-6",
+      "type": "s1-boundary-node",
+      "data": { "label": "MVP Boundary", "description": "النطاق يتضمن جميع العمليات المالية في المصنع، بما في ذلك المبيعات، المشتريات، الرواتب، والمخزون.", "points": ["المبيعات","المشتريات","الرواتب","المخزون"] },
+      "position": { "x": 880, "y": 420 },
+      "width": 360,
+      "height": 300,
+      "parentId": "group-s1-20260701-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "s1-gate-7",
+      "type": "gate-product",
+      "data": {
+        "label": "Product Gate ⛔",
+        "description": "لا يمكن الانتقال إلى S2 قبل اعتماد الشكل",
+        "gateStatus": "approved",
+        "decisionAuthority": "Human Only",
+        "gateChecklist": [
+          "رؤية المنتج واضحة",
+          "Personas معرّفين",
+          "Modules محددة",
+          "Procedures واضحة",
+          "MVP Boundary واضح"
+        ]
+      },
+      "position": { "x": 400, "y": 820 },
+      "width": 600,
+      "height": 200,
+      "parentId": "group-s1-20260701-pro001",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    { "id": "e-s1-stage-insight", "type": "custom", "source": "s1-stage-1", "target": "s1-insight-2" },
+    { "id": "e-s1-insight-personas", "type": "custom", "source": "s1-insight-2", "target": "s1-personas-3" },
+    { "id": "e-s1-stage-modules", "type": "custom", "source": "s1-stage-1", "target": "s1-modules-4" },
+    { "id": "e-s1-modules-procedures", "type": "custom", "source": "s1-modules-4", "target": "s1-procedures-5" },
+    { "id": "e-s1-personas-boundary", "type": "custom", "source": "s1-personas-3", "target": "s1-boundary-6" },
+    { "id": "e-s1-procedures-gate", "type": "custom", "source": "s1-procedures-5", "target": "s1-gate-7" },
+    { "id": "e-s1-boundary-gate", "type": "custom", "source": "s1-boundary-6", "target": "s1-gate-7" }
+  ],
+  "evidence": [],
+  "exportedAt": "2026-07-01T18:34:38.000Z"
+}
