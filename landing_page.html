@@ -3,95 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات تجميل الحيوانات الأليفة</title>
+    <title>لوحة تحكم لتحليلات SaaS</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #FFFAF0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #e9ecf3);
             color: #333;
             margin: 0;
             padding: 0;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
+            padding: 20px;
         }
         header {
-            background: #FFB6C1;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #FF69B4 3px solid;
+            text-align: center;
+            padding: 50px 0;
         }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
         }
-        .card {
-            background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-            margin: 20px;
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
             padding: 20px;
-            transition: transform 0.5s;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .gallery img {
+        .hero img {
             width: 100%;
-            height: auto;
+            max-width: 600px;
             border-radius: 10px;
         }
-        .services, .gallery, .testimonials {
-            margin-top: 30px;
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .feature-card img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .pricing {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+        .pricing table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .pricing th, .pricing td {
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .trust-badges img {
+            width: 100px;
+            margin: 0 10px;
         }
         footer {
-            background: #FFB6C1;
-            color: #ffffff;
+            background: #333;
+            color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>خدمات تجميل الحيوانات الأليفة</h1>
-        </div>
+        <h1>لوحة تحكم لتحليلات SaaS</h1>
+        <p>عرض البيانات الحية في واجهة سلسة ومحدثة لحظيًا</p>
     </header>
 
     <div class="container">
-        <section class="services">
-            <h2>خدماتنا</h2>
-            <div class="card">
-                <h3>حزمة العناية الكاملة</h3>
-                <p>عناية شاملة مع حمام وقص الأظافر.</p>
+        <section class="hero">
+            <img src="https://via.placeholder.com/600x300" alt="عرض البيانات الحية">
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/50" alt="مرونة">
+                <h3>مرونة كاملة</h3>
+                <p>يمكنك تخصيص كل شيء تقريباً بما يتلائم مع احتياجاتك.</p>
             </div>
-            <div class="card">
-                <h3>حزمة التنظيف السريع</h3>
-                <p>تنظيف سريع مع العطور الخاصة للحيوانات.</p>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/50" alt="أمان">
+                <h3>أمان عالي</h3>
+                <p>الحفاظ على بياناتك آمنة مع أحدث تقنيات الحماية.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/50" alt="سهولة الاستخدام">
+                <h3>سهولة الاستخدام</h3>
+                <p>واجهة مستخدم متحرّكة وسهلة تجعل التحكم في البيانات بسيطاً.</p>
             </div>
         </section>
 
-        <section class="gallery">
-            <h2>معرض الحيوانات</h2>
-            <img src="https://via.placeholder.com/400" alt="صورة حيوان">
+        <section class="pricing">
+            <h2>جدول الأسعار</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>الخطة</th>
+                        <th>السعر</th>
+                        <th>المميزات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>أساسية</td>
+                        <td>$19/شهر</td>
+                        <td>عرض البيانات الأساسية والتقارير</td>
+                    </tr>
+                    <tr>
+                        <td>محترفة</td>
+                        <td>$49/شهر</td>
+                        <td>كل الميزات الأساسية مع دعم فني متميز</td>
+                    </tr>
+                    <tr>
+                        <td>شركات</td>
+                        <td>$99/شهر</td>
+                        <td>كل ما سبق مع تدريب شخصي وتكامل مخصص</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-        <section class="testimonials">
-            <h2>آراء العملاء</h2>
-            <div class="card">
-                <p>"كانت التجربة رائعة! سيحب حيوانك الأليف كل دقيقة هنا." – مي أحمد</p>
-            </div>
+        <section class="trust-badges">
+            <img src="https://via.placeholder.com/100?text=ISO+Certified" alt="شهادة ISO">
+            <img src="https://via.placeholder.com/100?text=Secure" alt="آمن">
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2023 خدمات تجميل الحيوانات الأليفة</p>
+        <p>&copy; 2023 لوحة تحكم لتحليلات SaaS، كل الحقوق محفوظة.</p>
     </footer>
 </body>
 </html>
