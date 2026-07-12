@@ -1,0 +1,147 @@
+{
+  "nodes": [
+    {
+      "id": "group-pd-20230712-pro001",
+      "type": "group",
+      "data": { "label": "PD — Problem Discovery" },
+      "position": { "x": 120, "y": -600 },
+      "width": 1600,
+      "height": 1200,
+      "style": { "width": 1600, "height": 1200, "zIndex": -1 }
+    },
+    {
+      "id": "pd-summary-1",
+      "type": "pd-summary-node",
+      "data": { "label": "Problem Summary", "description": "في قسم الطوارئ، قد تعني دقائق الانتظار الفارق بين الاستقرار وتدهور الحالة. مع ازدحام المرضى، يصبح فرز الأولويات بسرعة ودقة تحديًا يوميًا للطاقم الطبي.", "points": ["تأخير العلاج بسبب ازدحام المرضى.", "تحديات في تحديد أولوية الحالات بشكل دقيق.", "الإجراءات اليدوية تزيد الضغط على الطاقم الطبي."] },
+      "position": { "x": 40, "y": 80 },
+      "width": 320,
+      "height": 280,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-actors-2",
+      "type": "pd-actors-node",
+      "data": { "label": "Actors", "description": "الطاقم الطبي، المرضى، أنظمة الإدارة الصحية.", "points": ["الأطباء والممرضين في قسم الطوارئ.", "المرضى الذين يتلقون الرعاية.", "إدارة المستشفى المعنية بتنسيق الخدمات."] },
+      "position": { "x": 420, "y": 80 },
+      "width": 300,
+      "height": 240,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-goals-3",
+      "type": "pd-goals-node",
+      "data": { "label": "Goals", "description": "الحد من وقت الانتظار وتحسين جودة رعاية المرضى. ", "points": ["تسريع فرز الحالات في قسم الطوارئ.", "توجيه المرضى إلى العلاج المناسب بسرعة.", "تحسين نتائج الرعاية الصحية. "] },
+      "position": { "x": 760, "y": 80 },
+      "width": 320,
+      "height": 260,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-pain-4",
+      "type": "pd-pain-points-node",
+      "data": { "label": "Pain Points", "description": "التحديات التي يواجهها الطاقم الطبي عند فرز الحالات. ", "points": ["عدم القدرة على تقييم الحالات بسرعة. ", "الخطر المتمثل في تفويت الحالات الحرجة. ", "الضغط العالي والتوتر بين الطاقم بسبب الزحام."] },
+      "position": { "x": 1120, "y": 80 },
+      "width": 320,
+      "height": 260,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-constraints-5",
+      "type": "pd-constraints-node",
+      "data": { "label": "Constraints", "description": "القيود التي تؤثر على فعالية العمليات. ", "points": ["نقص في الموارد البشرية في القسم. ", "تقنيات قديمة تسهم في تأخير اتخاذ القرارات. ", "تحديات في تكامل الأنظمة التقنية المختلفة. "] },
+      "position": { "x": 40, "y": 420 },
+      "width": 320,
+      "height": 260,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-scope-6",
+      "type": "pd-scope-node",
+      "data": { "label": "Scope", "description": "النطاق الذي يجب أن يأخذه الذكاء الاصطناعي بالاعتبار. ", "inScope": ["تحليل بيانات المرضى في الوقت الحقيقي.", "توجيه المرضى بناءً على الأولوية. ", "تحسين عمليات الفرز الحالية.", "تقديم أدوات دعم القرار للطاقم الطبي."], "outScope": ["قرارات علاجية نهائية مستندة إلى الذكاء الاصطناعي.", "استبدال الطاقم الطبي بذكاء اصطناعي بالكامل."] },
+      "position": { "x": 420, "y": 420 },
+      "width": 320,
+      "height": 300,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-signals-7",
+      "type": "pd-signals-node",
+      "data": { "label": "Success Signals", "description": "علامات النجاح التي يجب مراقبتها. ", "points": ["تقليل متوسط وقت الانتظار في القسم. ", "زيادة نسبة المرضى الذين يتلقون الرعاية المطلوبة في الوقت المناسب.", "تحسن ملحوظ في رضا المرضى والطاقم الطبي. "] },
+      "position": { "x": 760, "y": 420 },
+      "width": 320,
+      "height": 260,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-insight-9",
+      "type": "pd-summary-node",
+      "data": { "label": "Problem Insight", "description": "الحاجة إلى نظام متكامل يستخدم الذكاء الاصطناعي لتسريع وتحسين معالجة المرضى في قسم الطوارئ. ", "points": ["تحسين فعالية الشرط الصحي بشكل عام.", "تعزيز تجربة المرضى والعناية في القسم. "] },
+      "position": { "x": 40, "y": 780 },
+      "width": 320,
+      "height": 220,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-outcome-10",
+      "type": "pd-goals-node",
+      "data": { "label": "Desired Outcome", "description": "تحقيق تحسين ملحوظ في أوقات الانتظار ورعاية المرضى في قسم الطوارئ. ", "points": ["تقديم رعاية مناسبة للمرضى بشكل أسرع.", "تقليل نسبة حدوث المضاعفات بسبب التأخير في الرعاية."] },
+      "position": { "x": 420, "y": 780 },
+      "width": 320,
+      "height": 220,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-direction-11",
+      "type": "pd-summary-node",
+      "data": { "label": "Strategic Direction", "description": "تطبيق حلول الذكاء الاصطناعي للتخفيف من الضغط على الفرق الطبية في أقسام الطوارئ. ", "points": ["تحديد أولويات عناية المرضى بشكل أوتوماتيكي.", "تحقيق عمليات أفضل في تقدير الحالات. "] },
+      "position": { "x": 760, "y": 780 },
+      "width": 320,
+      "height": 220,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    },
+    {
+      "id": "pd-gate-12",
+      "type": "gate-problem",
+      "data": {
+        "label": "PD Lock Gate",
+        "description": "لا يمكن الانتقال إلى S0 قبل اعتماد المشكلة من الإنسان.",
+        "gateStatus": "approved",
+        "decisionAuthority": "Human Only",
+        "gateChecklist": [
+          "Summary واضح ومفهوم",
+          "الأطراف محددة",
+          "الأهداف غير تقنية",
+          "نقاط الألم صريحة",
+          "النطاق محدد",
+          "مؤشرات النجاح قابلة للتحقق"
+        ]
+      },
+      "position": { "x": 500, "y": 1100 },
+      "width": 600,
+      "height": 200,
+      "parentId": "group-pd-20230712-pro001",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    { "id": "e-pd-summary-actors", "type": "custom", "source": "pd-summary-1", "target": "pd-actors-2" },
+    { "id": "e-pd-actors-goals", "type": "custom", "source": "pd-actors-2", "target": "pd-goals-3" },
+    { "id": "e-pd-goals-pain", "type": "custom", "source": "pd-goals-3", "target": "pd-pain-4" },
+    { "id": "e-pd-constraints-scope", "type": "custom", "source": "pd-constraints-5", "target": "pd-scope-6" },
+    { "id": "e-pd-scope-signals", "type": "custom", "source": "pd-scope-6", "target": "pd-signals-7" },
+    { "id": "e-pd-signals-unknowns", "type": "custom", "source": "pd-signals-7", "target": "pd-unknowns-8" },
+    { "id": "e-pd-pain-gate", "type": "custom", "source": "pd-pain-4", "target": "pd-gate-12" }
+  ],
+  "evidence": [],
+  "exportedAt": "2026-07-12T07:50:20.000Z"
+}
